@@ -14,6 +14,7 @@
                                 <th>Telefonas</th>
                                 <th>El.Paštas</th>
                                 <th>Adresas</th>
+                                <th>Mašinos</th>
                                 <th></th>
                             </tr>
                             </thead>
@@ -26,6 +27,10 @@
                                     <td>{{ $owner->email }}</td>
                                     <td>{{ $owner->address }}</td>
                                     <td>
+                                        @foreach( $owner->cars as $car)
+                                            {{ $car->reg_number }} <br>
+                                        @endforeach
+                                    </td>
                                         <a class="btn btn-info" href="{{ route('owner.edit', $owner->id) }}">Redaguoti</a>
                                         <a class="btn btn-danger" href="{{ route('owner.delete', $owner->id) }}">Ištrinti</a>
                                     </td>

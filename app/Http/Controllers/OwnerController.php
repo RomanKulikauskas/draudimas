@@ -27,7 +27,7 @@ class OwnerController extends Controller
 
         return view('owner.index',
             [
-                'owners'=>Owner::all()
+                'owners'=>Owner::with('cars')->get()
             ]);
     }
 

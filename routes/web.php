@@ -32,3 +32,5 @@ Route::get('/owner/{id}/edit',[OwnerController::class,'edit'])->name('owner.edit
 Route::post('/owner/{id}/save',[OwnerController::class,'save'])->name('owner.save');
 
 Route::get('/owner/{id}/delete', [OwnerController::class, 'delete'])->name('owner.delete');
+
+Route::resource('cars', \App\Http\Controllers\CarController::class);
