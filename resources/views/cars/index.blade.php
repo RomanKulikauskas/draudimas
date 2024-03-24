@@ -6,15 +6,15 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{route('cars.create') }}" class="btn btn-info">Pridėti naują mašiną</a>
+                        <a href="{{route('cars.create') }}" class="btn btn-info">{{ __("Pridėti naują mašiną")  }}</a>
                         <hr>
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>Registracinis numeris</th>
-                                <th>Brendas</th>
-                                <th>Modelis</th>
-                                <th>Sąvininkas</th>
+                                <th>{{ __("Registracinis numeris") }}</th>
+                                <th>{{ __("Brendas") }}</th>
+                                <th>{{ __("Modelis") }}</th>
+                                <th>{{ __("Sąvininkas") }}</th>
                                 <th colspan="2"></th>
                             </tr>
                             </thead>
@@ -41,6 +41,7 @@
                             @endforeach
                             </tbody>
                         </table>
+                        {{ __('auth.hello') }}
                     </div>
                 </div>
             </div>

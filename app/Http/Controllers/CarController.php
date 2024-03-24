@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Car;
 use App\Models\Owner;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class CarController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         return view('cars.index',[
             'cars'=>Car::with('owner')->get()

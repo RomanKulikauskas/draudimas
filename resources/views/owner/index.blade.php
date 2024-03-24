@@ -30,10 +30,16 @@
                                         @foreach( $owner->cars as $car)
                                             {{ $car->reg_number }} <br>
                                         @endforeach
+                                    <td style="width: 100px;">
+                                        <a href="{{ route('owner.edit', $owner) }}" class="btn btn-success">Redaguoti</a>
+
                                     </td>
-                                        <a class="btn btn-info" href="{{ route('owner.edit', $owner->id) }}">Redaguoti</a>
-                                        <a class="btn btn-danger" href="{{ route('owner.delete', $owner->id) }}">Ištrinti</a>
-                                    </td>
+                                    <td style="width: 100px;">
+                                        <form method="post" action="{{ route('owner.delete', $owner) }}">
+                                            @csrf
+                                            @method("delete")
+                                            <button class="btn btn-danger">Ištrinti</button>
+                                        </form>
                                 </tr>
                             @endforeach
                             </tbody>

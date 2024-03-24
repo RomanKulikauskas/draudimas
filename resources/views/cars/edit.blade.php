@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        Redaguojama mašina
+                        {{ __('Redaguojama  mašina') }}
                     </div>
                     <div class="card-body">
                         <form method="post" action="{{ route('cars.update', $car) }}">

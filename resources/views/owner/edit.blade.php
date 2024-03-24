@@ -31,7 +31,7 @@
                                 <label class="form-label">Adresas:</label>
                                 <input type="text" class="form-control" name="address" value="{{ $owner->address }}">
                             </div>
-                            <button class="btn btn-success">Pridėti</button>
+                            <button class="btn btn-success">Atnaujinti</button>
                         </form>
                     </div>
                 </div>
