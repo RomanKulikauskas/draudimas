@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CarRequest;
 use App\Models\Car;
 use App\Models\Owner;
 use Illuminate\Http\Request;
