@@ -17,5 +17,10 @@
     "Telefonas": "Telefonas",
     "El.Paštas": "El.Paštas",
     "Adresas": "Adresas",
-    "Redaguojamas savininkas": "Redaguojamas savininkas"
+    "Redaguojamas savininkas": "Redaguojamas savininkas",
+    "Registracinis numeris yra privalomas": "Registracinis numeris yra privalomas",
+    "Turi būti 5 simbolių ilgio": "Turi būti 5 simbolių ilgio",
+    "Brendas yra privalomas ir turi būti nuo 3 iki 32 simbolių ilgio": "Brendas yra privalomas ir turi būti nuo 3 iki 32 simbolių ilgio",
+    "Modelis yra privalomas ir turi būti nuo 3 iki 32 simbolių ilgio": "Modelis yra privalomas ir turi būti nuo 3 iki 32 simbolių ilgio",
+    "Sąvininkas yra privalomas": "Sąvininkas yra privalomas"
 }

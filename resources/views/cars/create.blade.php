@@ -9,21 +9,30 @@
                         Pridėti naują mašiną
                     </div>
                     <div class="card-body">
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                @foreach($errors->all() as $error)
+                                    <div>{{ $error }}</div>
+                                @endforeach
+                            </div>
+                        @endif
+
                         <form method="post" action="{{ route('cars.store') }}">
                             @csrf
                             <div class="mb-3">
-                                <label class="form-label">Registracinis numeris:</label>
-                                <input class="form-control @error('reg_number') is-invalid @enderror" name="reg_number" type="text" value="{{ old('reg_number') }}" >
-                                <div class="invalid-feedback">@error('reg_number') {{ $message }} @enderror</div>
+                                <label class="form-label">{{ __('Registracinis numeris') }}:</label>
+                                <input type="text" class="form-control @error('reg_number') is-invalid @enderror" name="reg_number"  value="{{ old('reg_number') }}" >
+                                @error('reg_number') {{ $message }} @enderror
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Brendas:</label>
-                                <input class="form-control @error('brand') is-invalid @enderror" name="brand" type="text"  value="{{ old('brand') }}" >
+                                <label class="form-label">{{ __('Brendas') }}:</label>
+                                <input type="text" class="form-control @error('brand') is-invalid @enderror" name="brand"  value="{{ old('brand') }}" >
                                 <div class="invalid-feedback">@error('brand') {{ $message }} @enderror</div>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Modelis:</label>
-                                <input class="form-control @error('model') is-invalid @enderror" name="model" type="text" value="{{ old('model') }}" >
+                                <label class="form-label">{{ __('Modelis') }}:</label>
+                                <input type="text" class="form-control @error('model') is-invalid @enderror" name="model"  value="{{ old('model') }}" >
                                 <div class="invalid-feedback">@error('model') {{ $message }} @enderror</div>
                             </div>
                             <div class="mb-3">

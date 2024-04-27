@@ -37,6 +37,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/owner/{id}/save', [OwnerController::class, 'save'])->name('owner.save');
 
     Route::get('/owner/{id}/delete', [OwnerController::class, 'delete'])->name('owner.delete');
+    Route::get('/student/{id}/document',[\App\Http\Controllers\CarController::class, 'document'])->name('car.document');
+    Route::get('/student/{id}/documentDelete',[\App\Http\Controllers\CarController::class, 'documentDelete'])->name('car.documentDelete');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

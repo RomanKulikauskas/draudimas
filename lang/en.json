@@ -17,6 +17,11 @@
     "Telefonas": "Phone",
     "El.Paštas": "Email",
     "Adresas": "Address",
-    "Redaguojamas savininkas": "Editing an owner"
+    "Redaguojamas savininkas": "Editing an owner",
+    "Registracinis numeris yra privalomas": "Registration number is required",
+    "Turi būti 5 simbolių ilgio": "Must be 5 characters",
+    "Brendas yra privalomas ir turi būti nuo 3 iki 32 simbolių ilgio": "Brand is required and must be from 3 to 32 characters",
+    "Modelis yra privalomas ir turi būti nuo 3 iki 32 simbolių ilgio": "Model is required and must be from 3 to 32 characters",
+    "Sąvininkas yra privalomas": "Owner is required"
 
 }
