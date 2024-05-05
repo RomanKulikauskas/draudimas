@@ -31,8 +31,9 @@
                                             {{ $car->reg_number }} <br>
                                         @endforeach
                                     <td style="width: 100px;">
+                                        @can('update', $owner)
                                         <a href="{{ route('owner.edit', $owner) }}" class="btn btn-success">Redaguoti</a>
-
+                                            @endcan
                                     </td>
                                     <td style="width: 100px;">
                                         <form method="post" action="{{ route('owner.delete', $owner) }}">

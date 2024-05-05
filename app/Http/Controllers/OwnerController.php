@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class OwnerController extends Controller
 {
+    public function __construct()
+    {
+        $this->authorizeResource(Owner::class, 'owner');
+    }
     public function create(){
         return view("owner.create");
     }
